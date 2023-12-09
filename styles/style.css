@@ -272,7 +272,6 @@
   padding: 0;
   cursor: pointer;
   background-color: transparent;
-  border: none;
   color: var(--accent-color, #000);
   border: 2px solid transparent;
   transition: border 0.3s ease;
