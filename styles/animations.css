@@ -12,3 +12,90 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* Стили иконки сердца */
+
+.core {
+  transition: fill 0.03s;
+}
+
+.main-body {
+  fill: var(--svg-heart-contour, #000);
+  transition: fill 0.3s, opacity 0.3s;
+}
+
+.contour {
+  transition: fill 0.3s 0.06s;
+}
+
+/* Стили состояния иконки сердца */
+
+.card__icon-button:hover .core {
+    fill: var(--accent-color, #000);
+    transition: fill 0.3s;
+  }
+
+  .card__icon-button:hover .main-body {
+    fill: var(--svg-heart-contour, #000);
+    opacity: 100%;
+    transition: fill 0.3s 0.05s, opacity 0.3s 0.05s;
+  }
+
+  .card__icon-button:active .core {
+    fill: var(--svg-heart-main-body, #FF0000);
+    transition: fill 0.3s;
+  }
+
+  .card__icon-button:active .main-body {
+    fill: var(--svg-heart-main-body, #FF0000);
+    transition: fill 0.3s 0.05s;
+  }
+
+  .like-icon.is-liked .core {
+    fill: var(--svg-heart-main-body, #FF0000);
+    transition: fill 0.3s;
+  }
+
+  .like-icon.is-liked .main-body {
+    fill: var(--svg-heart-main-body, #FF0000);
+    opacity: 100%;
+    transition: fill 0.3s 0.05s, opacity 0.3s 0.05s;
+  }
+
+  .like-icon.is-liked .contour {
+    fill: var(--svg-heart-main-body, #FF0000);
+    transition: fill 0.3s 0.06s;
+  }
+
+  .like-icon.is-liked .heart {
+    animation: heart 0.3s 0.1s ease-in;
+    transform-origin: center;
+  }
+
+  .like-icon.is-liked .sparks {
+    animation: sparks 0.3s 0.3s ease-in;
+  }
+
+  .card__icon-button:focus-visible {
+    border: 2px solid var(--accent-color, #000);
+    transition: border 0.3s ease;
+  }
+
+  /* Кифрейм для стрелочки в шапке */
+
+@keyframes shaking {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(4px) }
+   }
+
+/* Кифреймы для масштабирования */
+
+@keyframes heart {
+    0% { transform: scale(1) }
+    100% { transform: scale(1.5) }
+}
+
+@keyframes sparks {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}

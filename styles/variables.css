@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --text-font-family: 'Inter-Variable';
+    --accent-font-family: 'PressStart2P';
+    --text-font-weight: 400px;
+    --font-size-14: 14px;
+    --font-size-18: 18px;
+    --bg-color: #FFF;
+    --button-color: #FFF;
+    --accent-color: #000;
+    --bg-img-color-1: #d3d3d3;
+    --bg-img-color-2: #e7e7e7;
+    --bg-img-color-3: #1a1a1a;
+    --svg-heart-contour: #000;
+    --svg-heart-main-body: #FF0000;
+    --stroke-color: rgba(255, 255, 255, 1);
+}
