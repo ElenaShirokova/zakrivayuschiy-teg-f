@@ -6,27 +6,27 @@
 */
 
 :root.theme-dark {
-    ---text-font-weight: 465px;
+    --text-font-weight: 465;
     --bg-color: #000;
     --button-color: #00CC14;
     --accent-color: #00CC14;
-    --bg-img-color-1: #000;
-    --bg-img-color-2: #007f0c;
-    --bg-img-color-3: #004306;
+    --gradient-color: #000;
+    --gradient-color-from: #007f0c;
+    --gradient-color-to: #004306;
     --stroke-color: rgba(0, 0, 0, 1);
     --svg-heart-contour: #00CC14;
     --svg-heart-main-body: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
-    root {
-    --text-font-weight: 465px;
+    :root {
+    --text-font-weight: 465;
     --bg-color: #000;
     --button-color: #FFF;
     --accent-color: #00CC14;
-    --bg-img-color-1: #000;
-    --bg-img-color-2: #007f0c;
-    --bg-img-color-3: #004306;
+    --gradient-color: #000;
+    --gradient-color-from: #007f0c;
+    --gradient-color-to: #004306;
     --stroke-color: rgba(0, 0, 0, 1);
     --svg-heart-contour: #00CC14;
     --svg-heart-main-body: #FF0000;
@@ -34,13 +34,13 @@
 }
 
 :root.theme-light {
-    --text-font-weight: 400px;
+    --text-font-weight: 400;
     --bg-color: #FFF;
     --button-color: #FFF;
     --accent-color: #000;
-    --bg-img-color-1: #d3d3d3;
-    --bg-img-color-2: #e7e7e7;
-    --bg-img-color-3: #1a1a1a;
+    --gradient-color: #d3d3d3;
+    --gradient-color-from: #e7e7e7;
+    --gradient-color-to: #1a1a1a;
     --svg-heart-contour: #000;
     --svg-heart-main-body: #FF0000;
     --stroke-color: rgba(255, 255, 255, 1);
