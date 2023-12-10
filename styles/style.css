@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--text-font-family, sans-serif);
-  font-variation-settings: 'wght' var(--text-font-weight, 400px);
+  font-variation-settings: 'wght' var(--text-font-weight, 400);
   background-color: var(--bg-color, #FFF);
   color: var(--accent-color, #000);
   background-image:
@@ -55,13 +55,13 @@
 
 .header__link {
   font-size: clamp(3.063rem, 2.715rem + 1.497vw, 4.063rem);
-  font-weight: var(--text-font-weight, 400px);
+  font-weight: var(--regular-font-weight, 400);
   text-decoration: none;
 }
 
 .header__title {
   font-size: clamp(0.875rem, 0.68rem + 0.842vw, 1.438rem);
-  font-weight: var(--text-font-weight, 400px);
+  font-weight: var(--regular-font-weight, 400);
 }
 
 /*Стили меню */
@@ -159,7 +159,7 @@
 
 .card__title {
   font-size: var(--font-size, 18px);
-  font-variation-settings: 'wght' var(--title-font-weight, 700px);
+  font-variation-settings: 'wght' var(--title-font-weight, 700);
   padding: 4px 10px;
 }
 
@@ -220,7 +220,7 @@
   right: clamp(0.813rem, 0.548rem + 1.127vw, 1.563rem);
   font-family: var(--accent-font-family, fantasy);
   font-size: var(--font-size-accent, 14px);
-  font-weight: var(--text-font-weight, 400px);
+  font-weight: var(--regular-font-weight, 400);
   text-shadow: 1px 0 var(--stroke-color, rgba(255, 255, 255, 1)),
     0 1px var(--stroke-color, rgba(255, 255, 255, 1)),
     1px 0 var(--stroke-color, rgba(255, 255, 255, 1)),
@@ -243,7 +243,7 @@
   gap: 27px;
   padding: 25px 28px 27px 25px;
   font-size: var(--font-size, 18px);
-  font-weight: var(--text-font-weight, 400px);
+  font-weight: var(--text-font-weight, 400);
   line-height: 1.16;
 }
 
@@ -276,12 +276,6 @@
   transition: border 0.3s ease;
 }
 
-/* Стили состояния кнопки сердца */
-
-.card__icon-button:focus-visible {
-  border: 2px solid var(--accent-color, #000);
-}
-
 /* Стили иконки сердца */
 
 .sparks {
@@ -310,6 +304,10 @@
 .button:focus,
 .card__icon-button:focus {
   outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color, #000);
 }
 
 .button:focus-visible {
@@ -414,6 +412,7 @@ dialog:not([open]) {
 }
 
 .dialog__button {
+  inline-size: 100%;
   padding-block: 9px;
   text-transform: uppercase;
 }

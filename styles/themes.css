@@ -7,6 +7,7 @@
 
 :root.theme-dark {
     --text-font-weight: 465;
+    --title-font-weight: 785;
     --bg-color: #000;
     --button-color: #00CC14;
     --accent-color: #00CC14;
@@ -21,8 +22,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
     --text-font-weight: 465;
+    --title-font-weight: 785;
     --bg-color: #000;
-    --button-color: #FFF;
+    --button-color: #00CC14;
     --accent-color: #00CC14;
     --gradient-color: #000;
     --gradient-color-from: #007f0c;
